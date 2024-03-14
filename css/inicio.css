@@ -1,27 +1,47 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
-}
-nav{
-    display: flex;
-    justify-content: center;
-}
-#buscador input{
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: black solid 2px;
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-
+    margin: 0;
+    padding: 0;
 }
 body{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient( rgb(255, 94, 0), rgb(255, 149, 0), rgb(255, 183, 0), rgb(255, 208, 0));
+    background-image: url(./../imgs/fondo.jpg);
+    background-size: cover;
+}
+nav {
+    background-color: #33333358;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#logo{
+    width: 40px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 100px;
+    color: white;
 }
 footer {
     position: fixed;
@@ -36,37 +56,4 @@ footer div{
     display: flex;
     justify-content: start;
     align-items: center;
-}
-main h1{
-    display: flex;
-    justify-content: center;
-}
-button{
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border-width: 5px;
-    border-color: beige;
-    border-radius: 5px;
-    width: 80px;
-    height: 50px;
-}
-button:hover{
-    color: aqua;
-}
-#pg{
-    width: 100%;
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-gap: 50px;
-}
-article{
-    display: flex;
-flex-direction: column;
-width: 20%;
-height: 5vh;
 }

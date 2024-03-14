@@ -1,31 +1,119 @@
 *{
     box-sizing: border-box;
-    margin: 5px;
-    padding: 0;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 body{
+    background: linear-gradient(white, rgb(229, 229, 229), rgb(190, 190, 190));
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    background: radial-gradient( rgb(255, 217, 0), rgb(255, 208, 0), rgb(255, 174, 0), rgb(255, 128, 0));
 }
-main h1{
-    font-size: 30px;
+nav {
+    background-color: #33333358;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#logo{
+    width: 40px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
-
 section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
-.buscador{
+section input:hover{
+    
+    border-color: rgb(4, 107, 107);
+}
+.form-group input{
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #000000;
+}
+/* todo el texto comentado fue una animacion que me aparecio por insta para los divs el detalle es que no se logro XD, y no se logro ver el texto dentro de la barra asi que bueno lo dejo para manejarlo luego */
+/* .form-group{
+    position: relative;
+    margin: 12px 0;
+}
+.form-group input{
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+}
+.form-group input:focus{
+    border-color: #eee;
+}
+.form-group input::placeholder{
+    color: transparent;
+}
+.form-group .form-label{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown) + 
+.form-label{
+    transform: translate(5px -22px);
+    background-color: black;
+    font-size: 14px;
+    color: #eee;
+} */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #9494946e;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+footer div{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
-
