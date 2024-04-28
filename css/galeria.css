@@ -51,7 +51,7 @@ h1{
     align-items: center;
     grid-template-columns: repeat(3,1fr);
     place-items: center;
-    gap: 30px;
+    gap: 30px, 5px, 5px, 2px;
 }
 .poco{
     display: grid;
@@ -108,7 +108,6 @@ h1{
 
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #9494946e;
